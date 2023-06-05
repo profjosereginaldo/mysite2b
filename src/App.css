@@ -1,0 +1,12 @@
+#root {
+  display: flex;  
+  flex: 1;
+  flex-direction: column;
+}
+
+.erro {
+  margin: 0;
+  line-height: 2;
+  font-size: 1rem;
+  color: red;
+}

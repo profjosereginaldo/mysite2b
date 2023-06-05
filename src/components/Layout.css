@@ -1,0 +1,21 @@
+header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+main {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
