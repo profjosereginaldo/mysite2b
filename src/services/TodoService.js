@@ -1,8 +1,8 @@
-const url = "https://back-react-1577b-default-rtdb.firebaseio.com/todo.json"
+import { urlApi } from "./FirebaseConfig"
 
 export async function listTodos() {
   let tarefas = []
-  await fetch(url)
+  await fetch(urlApi)
     .then((response) => response.json())
     .then((data) => { 
       for(let id in data) {
@@ -14,7 +14,8 @@ export async function listTodos() {
 }
 
 export async function insertTodo(todo) {
-  await fetch(url, { 
+  await fetch(urlApi, { 
+    method: 'POST',
     body: JSON.stringify(todo), 
     headers: { 'Content-type': 'application/json' },
   })
