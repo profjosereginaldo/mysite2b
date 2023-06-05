@@ -9,7 +9,7 @@ const AuthContext = createContext({
 })
 
 export function AuthContextProvider(props) {
-  const [currentUser, setCurrentUser] = useState({ userId: null, logado: false })
+  const [currentUser, setCurrentUser] = useState({ userId: null, logado: true })
 
   async function handleLogin(email, senha) {
     try {

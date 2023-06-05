@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { listTodos } from "../services/TodoService"
+import { listTodos } from "../services/FirestoreService"
 
 export default function HomeList() {
   const [isLoading, setIsLoading] = useState(false)
