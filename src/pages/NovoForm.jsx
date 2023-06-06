@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router-dom'
-import { insertTodo } from '../services/TodoService'
+import { insertTodo } from '../services/FirestoreService'
 
 export default function NovoForm() {
   const { register, handleSubmit } = useForm()
